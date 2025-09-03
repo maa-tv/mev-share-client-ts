@@ -2,7 +2,7 @@ name: MEV-Share Bot
 
 on:
   schedule:
-    - cron: '*/2 * * * *'  # Runs every 2 minutes
+    - cron: '*/2 * * * *'  # runs every 2 minutes
   workflow_dispatch:
 
 jobs:
