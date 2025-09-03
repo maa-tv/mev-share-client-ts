@@ -14,10 +14,10 @@ jobs:
         with:
           node-version: 18
       - run: npm install
+      - run: npm run build
       - name: Run Backrun Example
         env:
           RPC_URL: ${{ secrets.RPC_URL }}
           PRIVATE_KEY: ${{ secrets.PRIVATE_KEY }}
         run: |
-          cd src/examples
-          node example.backrun.js
+          node dist/examples/sendBackrunBundle.js
